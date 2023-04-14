@@ -1,0 +1,62 @@
+body {
+    background-color: #f7f7f7;
+  }
+  
+  nav {
+    background-color: #333;
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+  }
+  
+  ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  li {
+    display: inline-block;
+  }
+  
+  a {
+    display: block;
+    padding: 10px;
+    margin: 0 10px;
+    border-bottom: 2px solid transparent;
+    color: #fff;
+    text-decoration: none;
+  }
+  
+  a:hover {
+    border-bottom-color: #fff;
+  }
+  
+  section {
+    padding: 20px;
+    margin: 20px;
+  }
+  
+  h1 {
+    margin-top: 0;
+  }
+  
+  p {
+    margin-bottom: 0;
+  }
+
+  /* Example media query for mobile devices */
+@media (max-width: 768px) {
+    /* Add mobile-specific styles here */
+}
+
+/* Example media query for tablets */
+@media (min-width: 769px) and (max-width: 1024px) {
+    /* Add tablet-specific styles here */
+}
+
+/* Example media query for desktop devices */
+@media (min-width: 1025px) {
+    /* Add desktop-specific styles here */
+}
