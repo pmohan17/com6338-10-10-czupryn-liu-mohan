@@ -1,5 +1,5 @@
 body {
-    background-color: #f7f7f7;
+  background-color: #f7f7f7;
   }
   
   nav {
@@ -60,6 +60,10 @@ body {
 
   body > main > div > h3 > a {
     color: red;
+  }
+  
+  #headlines li a {
+    color: #333;
   }
 
 
