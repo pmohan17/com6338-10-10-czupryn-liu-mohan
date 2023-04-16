@@ -58,7 +58,7 @@ body {
     margin-bottom: 0;
   }
 
-  body > main > div > h3 > a {
+  h3 > a {
     color: red;
   }
   
