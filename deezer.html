@@ -4,33 +4,56 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Deezer page</title>
+    <link rel="stylesheet" href="style.css" />
+    <title>Deezer Page</title>
 </head>
-<body>
-    <header>
-        <div class = heading>
-        <nav class="header__nav">
-        <a href="/index.html" class="home_link">Home</a>
-        <a href="/deezer.html" class="deezer__link">Deezer</a>
-        <a href="/twt.html" class="twt__link">Twitter</a>
-    </nav>
-    </div>
-        <main>
-            <div class="maincontent">
-                <h1>Deezer page </h1>
-                <h2>Welcome!</h2> 
-                <h3> Use the form below to search your favorite song. You will get info on the song's artist, release date, and more.</h3>
-                <div id="deezer-app">
-                    <section id="deezer-app-section"></section>
-                    <form>
-                      <input name="search" id="deezer-search" type="text" placeholder=" " />
-                      <label for="deezer-search">
-                        Enter Name of Song
-                      </label>
-                      <button type="submit">Search</button>
-                    </form>
-                  </div>
-        </nav>
-        </header>
+  <body>
+    <div id="grid">
+    <!-- START HEADER -->
+    <header class="header">
+      <!-- START NAVIGATION -->
+      <div class="nav">
+          <div class="nav__links">
+              <a href="/index.html" class="home_link">Home</a>
+              <a href="/deezer.html" class="deezer__link">Deezer</a>
+              <a href="/twt.html" class="twt__link">Twitter</a>
+          </div>
+      </div>
+      <!-- END NAVIGATION -->
+  </header>
+  <!-- END HEADER -->
+  
+  <!-- START MAIN CONTENT -->
+      <main>
+          <div class="main__wrapper">
+            <h1>Deezer Page </h1>
+            <h2>Welcome!</h2> 
+            <h3> Use the form below to search for your favorite song. You will get info on the song's artist, release date, and more.</h3>
+               <div id="deezer-app">
+                  <section id="deezer-app-section"></section>
+                   <form>
+                    <input name="search" id="deezer-search" type="text" placeholder="Song title" />
+                    <label for="deezer-search">
+                      Enter Name of Song
+                    </label>
+                    <button type="submit">Search</button>
+                  </form>
+              </div>
+          </div>
+      </main>
+  <!-- END MAIN CONTENT -->
+
+        <!-- START FOOTER -->
+        <footer class="footer">
+          <div class = "nav__links">
+              <a href="/index.html" class="home_link">Home</a>
+              <a href="/deezer.html" class="deezer__link">Deezer</a>
+              <a href="/twt.html" class="twt__link">Twitter</a>
+          </div>
+        </footer>
+        <!-- END FOOTER -->
+      </div>
+
+        <script src="index.js"></script>
 </body>
 </html>
