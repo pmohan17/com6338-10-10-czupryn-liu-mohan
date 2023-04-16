@@ -1,5 +1,5 @@
 body {
-    background-color: #f7f7f7;
+  background-color: #f7f7f7;
   }
   
   nav {
@@ -40,10 +40,30 @@ body {
   
   h1 {
     margin-top: 0;
+    text-align: center;
   }
-  
+  h2 {
+    
+    text-align: center;
+  }
+  h3{
+    text-align: center;
+    margin: auto;
+  }
+
+  form {
+    text-align: center;
+}
   p {
     margin-bottom: 0;
+  }
+
+  body > main > div > h3 > a {
+    color: red;
+  }
+  
+  #headlines li a {
+    color: #333;
   }
 
   /* Example media query for mobile devices */
