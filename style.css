@@ -40,8 +40,20 @@ body {
   
   h1 {
     margin-top: 0;
+    text-align: center;
   }
-  
+  h2 {
+    
+    text-align: center;
+  }
+  h3{
+    text-align: center;
+    margin: auto;
+  }
+
+  form {
+    text-align: center;
+}
   p {
     margin-bottom: 0;
   }

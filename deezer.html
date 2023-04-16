@@ -4,6 +4,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://e-cdns-files.dzcdn.net/js/min/dz.js"></script>
     <title>Deezer page</title>
 </head>
 <body>
@@ -11,11 +13,13 @@
         <div class = heading>
         <nav class="header__nav">
         <a href="/index.html" class="home_link">Home</a>
-        <a href="/deezer.html" class="deezer__link">Deezer</a>
-        <a href="/twt.html" class="twt__link">Twitter</a>
+        <a href="/twt.html" class="twt__link">Twitter API</a>
+        <a href="/deezer.html" class="deezer__link">Deezer API</a>
     </nav>
     </div>
-        <main>
+  </header>
+        <body>
+          <main>
             <div class="maincontent">
                 <h1>Deezer page </h1>
                 <h2>Welcome!</h2> 
@@ -29,8 +33,15 @@
                       </label>
                       <button type="submit">Search</button>
                     </form>
-                  </div>
-        </nav>
-        </header>
+                    <script>
+                      DZ.init({
+                              appId  : '596584',
+                              channelUrl : 'https://pmohan17.github.io/com6338-10-10-czupryn-l',
+                              }
+                          );
+                  </script>
+                  </main>
+    
+
 </body>
 </html>
