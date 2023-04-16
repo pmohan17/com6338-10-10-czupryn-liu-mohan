@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Calendar page</title>
+</head>
+<body>
+    <header>
+        <div class = "heading">
+        <nav class="header__nav">
+        <a href="/index.html" class="home_link">Home</a>
+        <a href="/twt.html" class="twt__link">Twitter API</a>
+        <a href="/holiday.html" class="holiday__link">Holiday API</a>
+    </nav>
+    </div>
+  </header>
+        <body>
+          <main>
+            <div class="maincontent">
+                <h1>Calendar page </h1>
+                <h2>Welcome!</h2> 
+                <h3>Enter a two-letter country code to find holidays by country. Click <a href = "https://en.wikipedia.org/wiki/List_of_ISO_3166_country_codes">here</a> for a list of codes.</h3>
+                <div id="holiday-app">
+                    <section id="holiday-app-section"></section>
+                    <form>
+                      <input name="search" id="holiday-search" type="text" placeholder=" " />
+                      <label for="holiday-search">
+
+                      </label>
+                      <button type="submit">Search</button>
+                    </form>
+        
+                  </main>
+    
+                  <script src="holiday.js"></script>
+</body>
+</html>
