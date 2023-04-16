@@ -58,6 +58,11 @@ body {
     margin-bottom: 0;
   }
 
+  body > main > div > h3 > a {
+    color: red;
+  }
+
+
   /* Example media query for mobile devices */
 @media (max-width: 768px) {
     /* Add mobile-specific styles here */
