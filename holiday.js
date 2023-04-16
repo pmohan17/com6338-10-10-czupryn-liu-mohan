@@ -23,9 +23,11 @@ form.onsubmit = function(e) {
     
 })
 .then(function(data) {
-    console.log(data)
-    p.textContent = JSON.stringify(data)
-        container.appendChild(p)
+    var names = []
+    data.forEach(element => names.push(element.name))
+    console.log(names)
+    p.textContent = JSON.stringify(names)
+    container.appendChild(p)
 })
 .catch(function(err) {
     var errMessage = document.createElement('h3')
