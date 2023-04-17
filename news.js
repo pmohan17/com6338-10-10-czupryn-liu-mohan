@@ -17,13 +17,29 @@ const apiUrl = `${apiEndpoint}?${new URLSearchParams(params).toString()}`;
 
 // Make API request
 fetch(apiUrl)
-  .then(response => response.json())
-  .then(data => {
-    // Do something with the data (e.g. display headlines)
-    data.articles.forEach(article => {
-      console.log(article.title);
+    .then(response => response.json())
+    .then(data => {
+      localStorage.setItem('headlines', JSON.stringify(data.articles));
+      renderHeadlines(data.articles);
+    })
+    .catch(error => {
+      console.error(error);
     });
-  })
-  .catch(error => {
-    console.error(error);
+
+function renderHeadlines(articles) {
+  headlines.innerHTML = '';
+  articles.forEach(article => {
+    const li = document.createElement('li');
+    const a = document.createElement('a');
+    a.href = article.url;
+    a.textContent = article.title;
+    li.appendChild(a);
+    headlines.appendChild(li);
   });
+}
+
+// Check if there are cached headlines in localStorage
+const cachedHeadlines = JSON.parse(localStorage.getItem('headlines'));
+if (cachedHeadlines) {
+  renderHeadlines(cachedHeadlines);
+}
