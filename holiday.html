@@ -4,37 +4,52 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://fonts.googleapis.com/css?family=Alef' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=Aref Ruqaa' rel='stylesheet'>
     <link rel="stylesheet" href="style.css">
     <title>Calendar page</title>
 </head>
 <body>
-    <header>
-        <div class = "heading">
-        <nav class="header__nav">
-        <a href="/index.html" class="home_link">Home</a>
-        <a href="/news.html" class="news__link">News API</a>
-        <a href="/holiday.html" class="holiday__link">Holiday API</a>
-    </nav>
-    </div>
-  </header>
-        <body>
-          <main>
-            <div class="maincontent">
-                <h1>Calendar page </h1>
-                <h2>Welcome!</h2> 
-                <h3>Enter a two-letter country code to find holidays by country. Click <a href = "https://en.wikipedia.org/wiki/List_of_ISO_3166_country_codes">here</a> for a list of codes.</h3>
-                <div id="holiday-app">
-                    <section id="holiday-app-section"></section>
-                    <form>
-                      <input name="search" id="holiday-search" type="text" placeholder=" " />
-                      <label for="holiday-search">
+  <div id="grid">
+    <!-- START HEADER -->
+    <header class="header">
+        <!-- START NAVIGATION -->
+        <div class="nav">
+          <div class="nav__logo">
+            <a href="index.html">
+              <img src="/earth.png" alt="Black and white icon of Earth" />
+            </a>
+            </div>
+            <div class="nav__links">
+                <a href="/index.html" class="nav__link">Home</a>
+                <a href="/holiday.html" class="nav__link">Holiday API</a>
+                <a href="/news.html" class="nav__link">News API</a>
+            </div>
+        </div>
+        <!-- END NAVIGATION -->
+    </header>
+    <!-- END HEADER -->
 
-                      </label>
-                      <button type="submit">Search</button>
-                    </form>
-        
-                  </main>
+    <!-- START MAIN CONTENT -->
+    <main class="main__wrapper">
+        <h1>Holidays by Country</h1>
+        <p>Enter a two-letter country code to find holidays by country. Click the link to be directed to the <a href="https://en.wikipedia.org/wiki/List_of_ISO_3166_country_codes">Wikipedia list of country codes</a>.</p>
+          <div id="holiday-app">
+            <section id="holiday-app-section"></section>
+              <form>
+              <input name="search" id="holiday-search" type="text" placeholder="Search for a holiday" />
+              <label for="holiday-search"></label>
+                 <button type="submit">Search</button>
+              </form>
+          </div>
+    </main>
+
+    <!-- END MAIN CONTENT-->
+
+    </div>
     
-                  <script src="holiday.js"></script>
-</body>
+    <script src="holiday.js"></script>
+
+  </body>
+
 </html>

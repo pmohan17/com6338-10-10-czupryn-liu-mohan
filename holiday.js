@@ -28,6 +28,18 @@ form.onsubmit = function(e) {
         }
         return res.json();
     
+})
+.then(function(data) {
+    var names = []
+    data.forEach(element => names.push(element.name))
+    console.log(names)
+    p.textContent = JSON.stringify(names)
+    container.appendChild(p)
+})
+.catch(function(err) {
+    var errMessage = document.createElement('h3')
+    errMessage.textContent = 'Invalid Entry'
+        container.appendChild(errMessage)
     })
     .then(function(data) {
         console.log(data);
